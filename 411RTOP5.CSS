@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #b1b5b6;
+  }
+  
+  /* 头部样式 */
+  .header {
+    background-color: #04c7f3;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav{
+    text-align: center;
+    background-color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+    
+  nav ul {
+     display: inline-block;
+     list-style-type:none;
+     margin: 0;
+     padding:0
+    }
+    
+  nav ul li {
+  display: inline-block;
+   margin: 0 10px;
+    }
+    
+    nav ul li a {
+   display:block;
+    padding: 10px;
+     color: #ffffff;
+     text-decoration:none;
+    }
+    
+    nav ul li a:hover {
+    color: #07daff;
+     background-color: #b44242;
+    }
+  img {
+    object-fit: cover; /* 图像自适应容器 */
+    object-position: center; /* 图像位置居中 */
+    width: 80%; /* 图像宽度设置为100% */
+    height: 20%; /* 图像高度自适应 */
+  }
+  
+  /* 列后面清除浮动 */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 响应式布局 - 宽度小于600px时设置上下布局 */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  /* 底部样式 */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
