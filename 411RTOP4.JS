@@ -5,12 +5,16 @@
     var nameInput = document.getElementById("name");
     var phoneInput = document.getElementById("phone");
     var addressInput = document.getElementById("address");
+    var fatherNameInput = document.getElementById("fatherName");
+    var motherNameInput = document.getElementById("motherName");
 
     var name = nameInput.value.trim();
     var phone = phoneInput.value.trim();
     var address = addressInput.value.trim();
+    var fatherName = fatherNameInput.value.trim();
+    var motherName = motherNameInput.value.trim();
 
-    if (name === "" || phone === "" || address === "") {
+    if (name === "" || phone === "" || address === "" || fatherName === "" || motherName === "") {
       var invalidMsg = document.createElement("p");
       invalidMsg.textContent = "无效";
       invalidMsg.style.color = "red";
